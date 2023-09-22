@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_prac/Counter%20App/provider.dart';
+import 'package:provider_prac/Enable%20Dark%20Theme/change_theme.dart';
+import 'Enable Dark Theme/provider_theme.dart';
 import 'Faviourte Icon/faviourte_provider.dart';
-import 'Faviourte Icon/faviourte_wit_provider.dart';
 import 'Slider App/provider.dart';
 
 void main() {
@@ -31,10 +32,27 @@ class MyApp extends StatelessWidget {
       ChangeNotifierProvider(create: (_)=>CountProvider()),
       ChangeNotifierProvider(create: (_)=>SliderProvider()),
       ChangeNotifierProvider(create: (_)=>FaviourteProvider()),
+      ChangeNotifierProvider(create: (_)=>ChangeThemeProvider()),
     ],
-      child: MaterialApp(
-        home: const FaviourteWithProvider(),
-      ),
+      child: Builder(
+          builder: (BuildContext context){
+          final themeChange = Provider.of<ChangeThemeProvider>(context);
+          return MaterialApp(
+         themeMode: themeChange.themeMode,
+        theme: ThemeData(
+          //primaryColor: Colors.orange,
+          //appBarTheme: AppBarTheme(color: Colors.orange)
+        ),
+        darkTheme: ThemeData(
+          brightness: Brightness.dark
+        ),
+
+        home: ChangeTheme(),
+        //const FaviourteWithProvider(),
+        );
+        }
+
+    ),
     );
 
   }

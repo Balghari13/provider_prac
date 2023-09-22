@@ -3,14 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:provider_prac/Slider%20App/provider.dart';
 
 
-class SliderWithProvider extends StatefulWidget {
+class SliderWithProvider extends StatelessWidget {
   const SliderWithProvider({super.key});
-
-  @override
-  State<SliderWithProvider> createState() => _SliderWithProviderState();
-}
-
-class _SliderWithProviderState extends State<SliderWithProvider> {
 
   @override
   Widget build(BuildContext context) {

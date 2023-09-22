@@ -15,7 +15,7 @@ final countProvider = Provider.of<CountProvider>(context, listen: false);
     print('build ');
     return Scaffold(
       appBar: AppBar(
-        title: Text('why use provider'),
+        title: const Text('why use provider'),
         centerTitle: true,
       ),
       body: Center(
@@ -30,7 +30,7 @@ final countProvider = Provider.of<CountProvider>(context, listen: false);
       floatingActionButton: FloatingActionButton(
         onPressed: (){
              countProvider.setCount();
-        }, child: Icon(Icons.add),
+        }, child: const Icon(Icons.add),
       ),
     );
   }

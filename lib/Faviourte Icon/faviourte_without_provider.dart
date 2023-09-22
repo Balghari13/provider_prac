@@ -14,7 +14,7 @@ class _FaviourtePageState extends State<FaviourtePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Faviourte to List'),
+        title: const Text('Add Faviourte to List'),
       ),
       body: Column(
         children: [

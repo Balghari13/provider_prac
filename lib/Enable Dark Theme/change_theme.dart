@@ -15,19 +15,19 @@ class _ChangeThemeState extends State<ChangeTheme> {
     final changeTheme = Provider.of<ChangeThemeProvider>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Change Theme'),
+        title: const Text('Change Theme'),
       ),
       body: Column(
         children: [
 RadioListTile(
-    title: Text('Light Theme'),
+    title: const Text('Light Theme'),
     value: ThemeMode.light, groupValue: changeTheme.themeMode, onChanged: changeTheme.setTheme),
           RadioListTile(
-            title: Text('Dark Theme'),
+            title: const Text('Dark Theme'),
               value: ThemeMode.dark, groupValue: changeTheme.themeMode
               , onChanged: changeTheme.setTheme),
           RadioListTile(
-              title: Text('System Theme'),
+              title: const Text('System Theme'),
               value: ThemeMode.system, groupValue: changeTheme.themeMode, onChanged: changeTheme.setTheme)
         ],
       ),

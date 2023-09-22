@@ -12,7 +12,7 @@ class SliderWithProvider extends StatelessWidget {
     print('build');
     return Scaffold(
       appBar: AppBar(
-        title: Text('Slider with provider'),
+        title: const Text('Slider with provider'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_prac/Counter%20App/provider.dart';
 import 'package:provider_prac/Enable%20Dark%20Theme/change_theme.dart';
+import 'package:provider_prac/show_all.dart';
 import 'Enable Dark Theme/provider_theme.dart';
 import 'Faviourte Icon/faviourte_provider.dart';
 import 'Slider App/provider.dart';
@@ -47,7 +48,8 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark
         ),
 
-        home: ChangeTheme(),
+        home: const ShowAll(),
+        //ChangeTheme(),
         //const FaviourteWithProvider(),
         );
         }

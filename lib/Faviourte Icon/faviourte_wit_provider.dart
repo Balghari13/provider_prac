@@ -19,7 +19,7 @@ class _FaviourteWithProviderState extends State<FaviourteWithProvider> {
     //FaviourteProvider faviourteProvider = Provider.of<FaviourteProvider>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Faviourte Provider'),
+        title: const Text('Faviourte Provider'),
       ),
       body: Column(
         children: [
@@ -38,8 +38,8 @@ class _FaviourteWithProviderState extends State<FaviourteWithProvider> {
                     value.add(index);
                   }
                 },
-                title: Text('Items ${index}'),
-                trailing: value.selected.contains(index)?Icon(Icons.favorite):Icon(Icons.favorite_outline),
+                title: Text('Items $index'),
+                trailing: value.selected.contains(index)?const Icon(Icons.favorite):const Icon(Icons.favorite_outline),
               );
             });
     }),

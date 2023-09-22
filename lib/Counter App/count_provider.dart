@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_prac/provider/count_provider.dart';
+import 'package:provider_prac/Counter%20App/provider.dart';
 
 
 class CountProviderPage extends StatefulWidget {

@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_prac/Example3/faviourte.dart';
-import 'package:provider_prac/Example3/faviourte_provider.dart';
-import 'package:provider_prac/Example3/faviourte_wit_provider.dart';
-import 'package:provider_prac/count_provider.dart';
-import 'package:provider_prac/provider/count_provider.dart';
-import 'package:provider_prac/slider_provider.dart';
+import 'package:provider_prac/Counter%20App/provider.dart';
+import 'Faviourte Icon/faviourte_provider.dart';
+import 'Faviourte Icon/faviourte_wit_provider.dart';
+import 'Slider App/provider.dart';
 
 void main() {
   runApp(const MyApp());

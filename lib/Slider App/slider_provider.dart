@@ -1,8 +1,6 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_prac/provider/count_provider.dart';
+import 'package:provider_prac/Slider%20App/provider.dart';
 
 
 class SliderWithProvider extends StatefulWidget {

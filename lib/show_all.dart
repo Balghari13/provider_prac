@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider_prac/Counter%20App/count_provider.dart';
 import 'package:provider_prac/Enable%20Dark%20Theme/change_theme.dart';
+import 'package:provider_prac/Faviourte%20Icon/faviourte_wit_provider.dart';
 import 'package:provider_prac/Faviourte%20Icon/faviourte_without_provider.dart';
 import 'package:provider_prac/Slider%20App/slider_provider.dart';
 
@@ -26,7 +27,7 @@ class ShowAll extends StatelessWidget {
               Navigator.push(context, MaterialPageRoute(builder: (context)=>const SliderWithProvider()));
             }, child: const Text('Slider App')),
             ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>const FaviourtePage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const FaviourteWithProvider()));
             }, child: const Text('Favourite Icon App')),
             ElevatedButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChangeTheme()));
